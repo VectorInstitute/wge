@@ -154,6 +154,7 @@ class MiniWoBInstance(Thread):
             options.add_argument('headless')
             options.add_argument('disable-gpu')
             options.add_argument('no-sandbox')
+            options.add_argument('--disable-dev-shm-usage')
         else:
             options.add_argument('app=' + self.url)
             options.add_argument('window-size={},{}'

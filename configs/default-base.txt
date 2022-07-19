@@ -35,7 +35,7 @@ log {
     trace_explore = 1000  # Traces for exploration, must be divisible by log.explore
     trace_replay = 1000  # Traces for replay, must be divisible by log.replay
 
-    save = 1000000000  # save every X steps
+    save = 10000  # save every X steps
     visualize_attention = 100000  # essentially, visualize once per episode
     record_screenshots = False    # whether to record screenshots in trace directory (slow; steal cursor)
 }
@@ -88,7 +88,7 @@ env {
   num_instances = 6
   subdomain = null  # Should be defined in task-mixin
   return_image = False  # Does not get the pixels of the image if False
-  headless = False  # whether Chrome should launch in headless mode or not. Currently headless mode is broken.
+  headless = True  # whether Chrome should launch in headless mode or not. Currently headless mode is broken.
   wait_ms = 0
   block_on_reset = True
   refresh_freq = 50
