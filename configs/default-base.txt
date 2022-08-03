@@ -35,7 +35,7 @@ log {
     trace_explore = 1000  # Traces for exploration, must be divisible by log.explore
     trace_replay = 1000  # Traces for replay, must be divisible by log.replay
 
-    save = 10000  # save every X steps
+    save = 5000  # save every X steps
     visualize_attention = 100000  # essentially, visualize once per episode
     record_screenshots = False    # whether to record screenshots in trace directory (slow; steal cursor)
 }
